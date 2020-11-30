@@ -1,0 +1,143 @@
+using System;
+
+namespace müsteri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Double k1, k2, cevre, alan;
+            Console.WriteLine("Kısa Kenarı giriniz.");
+            k1 = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Uzun Kenarı giriniz.");
+            k2 = Convert.ToInt16(Console.ReadLine());
+
+            cevre = (k1 + k2) * 2;
+            alan = (k1 * k2);
+
+            Console.WriteLine("Dikdörtgenin Çevresi:{0} ve Alanı :{1} dir.", cevre, alan);
+            Console.ReadKey();
+
+
+
+
+        }
+    }
+}
+            /*
+            var musteri1 = new Musteri()
+            {
+                Ad = "Elif",
+                Soyad = "Atlı",
+                Yas = 1999,
+                ogrencino = "221903551",
+                Meslek = "Öğrenci",
+                Maas= "",
+
+            };
+            var musteri2 = new Musteri()
+            {
+                Ad = "Dilay",
+                Soyad = "Abit",
+                Yas = 2001,
+                ogrencino = "221903536",
+                Meslek = "Öğrenci",
+                Maas = "",
+            };
+
+
+            var musteri3 = new Musteri()
+            {
+                Ad = "Behice",
+                Soyad = "Ejderoğlu",
+                Yas = 2001,
+                ogrencino = "221903584",
+                Meslek = "Öğrenci",
+                Maas = "" ,
+            };
+            var musteri4 = new Musteri()
+            {
+                Ad = "Ferdane",
+                Soyad = "Sumer",
+                Yas = 1973,
+                ogrencino = "",
+                Meslek = "Sosyal Hizmet Uzmanı",
+                Maas = "4800",
+            };
+            var musteri5 = new Musteri()
+            {
+                Ad = "Aleyna",
+                Soyad = "Sur",
+                Yas = 1993,
+                ogrencino = "",
+                Meslek = "Doktor",
+                Maas = "8000",
+            };
+            var musteri6 = new Musteri()
+            {
+                Ad = "Sefer",
+                Soyad = "Şeker",
+                Yas = 1998,
+                ogrencino = "",
+                Meslek = "Halkla İlişkiler",
+                Maas = "4800",
+            };
+
+
+            ToConsole(musteri1);
+            ToConsole(musteri2);
+            ToConsole(musteri3);
+            ToConsole(musteri4);
+            ToConsole(musteri5);
+            ToConsole(musteri6);
+
+
+
+        }
+
+
+        static void ToConsole(Musteri person)
+        {
+            Console.WriteLine("---------");
+            Console.WriteLine($"Ad: {person.Ad}");
+            Console.WriteLine($"Soyad: {person.Soyad}");
+            Console.WriteLine($"Yas: {person.Yas}");
+            Console.WriteLine($"ogrencino: {person.ogrencino}");
+            Console.WriteLine($"Meslek: {person.Meslek}");
+            Console.WriteLine($"Maas: {person.Maas}");
+            Console.WriteLine("---------");
+        }
+
+
+    }
+
+    class Musteri
+    {
+        public string Ad { get; set; }
+
+        public string Soyad { get; set; }
+
+        public int Yas { get; set; }
+
+        public string ogrencino { get; set; }
+        public string Meslek { get; set; }
+        public string Maas { get; set; }
+
+        public int Age
+        {
+            get
+            {
+                return DateTime.Now.Year - Yas;
+            }
+        }
+    }
+}
+
+
+
+*/
+    
+
